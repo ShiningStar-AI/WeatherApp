@@ -8,7 +8,7 @@
 A simple and elegant Android Weather App developed using **Java** in **Android Studio**, utilizing the **OpenWeatherMap API** to provide real-time weather data with clean UI elements and modern weather icons.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4da5c689-99a3-4623-a05b-ef5dcaee5a21" alt="Home Screen" width="300" />
+  <img src="./assets/WeatherApp-Screenshot.png" alt="Home Screen" width="300" />
 </p>
 
 ## 📱 Features
