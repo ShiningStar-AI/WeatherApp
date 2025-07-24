@@ -3,6 +3,12 @@ plugins {
 }
 
 android {
+    // <<<--- PASTE THE CODE HERE
+    Properties properties = new Properties()
+    if (rootProject.file("local.properties").exists()) {
+        properties.load(rootProject.file("local.properties").newDataInputStream())
+    }
+
     namespace 'com.example.weatherapp'
     compileSdk 34
 
@@ -12,6 +18,9 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+
+        // CORRECT 👍
+        buildConfigField "String", "API_KEY", properties.getProperty("apiKey", "\"\"")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     private final OkHttpClient client = new OkHttpClient();
     private final Gson gson = new Gson();
     // IMPORTANT: You need to get your own API key from OpenWeatherMap
-    private final String apiKey = "1c74077e3a71a87c08e2521986cc1394"; // Make sure to replace this with your key
+    String apiKey = BuildConfig.API_KEY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
